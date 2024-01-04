@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/56e61e7a15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-color ">
+        <div class="container-fluid position-relative">
+            <a class="navbar-brand" href="#">
+                <img src="./homeimg/WhatsApp_Image_2023-10-14_at_15.29.41_cf0b6c9d-removebg-preview.png" alt=""
+                    class="image1" height="55px" width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ulnav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./gallery section.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Accessories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="drop1st"><a class="dropdown-item" href="./tops .html">Tops</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="drop2nd"><a class="dropdown-item" href=".//kurti.html">Kurti</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="drop1st"><a class="dropdown-item" href="./bottom.html">Bottoms</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="drop2nd"><a class="dropdown-item" href="./hijab.html">Hijaabs</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="drop1st"><a class="dropdown-item" href="./luxury pret.html">Luxury Pret</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- fav-cart-btns -->
+        <div class="lcbtn">
+            <div class="fav">
+                <a href="#"><i class="fa-regular fa-heart fa-xl" id="icon"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-xl" id="icon"></i></a>
+            </div>
+        </div>
+        <!-- Modal-strt -->
+        <button id="modalbtn">
+            Login
+        </button>
+
+        <div id="box">
+            <div id="modal-content">
+                <h1>Login</h1>
+                <form action="message.html">
+                    <input type="name" placeholder="Enter Your Name" id="uname" class="modalinp"> <br><br>
+                    <input type="email" name="Email" placeholder="Enter Your Email" id="mail" class="modalinp"><br><br>
+                    <input type="password" name="password" placeholder="Enter Your Password" id="pw" class="modalinp">
+                    <br><br>
+                    <input type="password" name="password" placeholder="Enter Your Password" id="pw" class="modalinp">
+                    <br><br>
+                    <input type="button" value="Submit Now" id="clbtn">
+                </form>
+            </div>
+        </div>
+        <!-- Modal-end -->
+    </nav>
+    <!-- Navbar-end -->
+    <!-- mainlogo-sec -->
+    <section class="mainlogo-section">
+        <div class="container-fluid cont1 mt-4">
+            <div class="backpic " data-aos="fade-up" data-aos-duration="3000">
+                <img src="./homeimg/main2nd-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- filter-strt -->
+    <ul class="fillul">
+        <li class="list active" data-filters="All">All</li>
+        <li class="list" data-filters="Bottom">Bottoms</li>
+        <li class="list" data-filters="Kurti">Kurti'es</li>
+        <li class="list" data-filters="lux">Luxury Prets</li>
+        <li class="list" data-filters="top">Women Tops</li>
+        <li class="list" data-filters="hijab">Women Hijaabs</li>
+    </ul>
+    <hr class="mx-auto w-51 mt-4">
+    <!-- filter-end -->
+
+    <!-- carousel-section -->
+    <section class="advertise-section" data-aos="fade-right" data-aos-duration="1500">
+
+        <div class="container fw-bold text-center common-title mt-5">
+            <h5 class="text-capitalize common-heading">TOP CATEGORY</h5>
+            <hr class="mx-auto w-25">
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                    aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                    aria-label="Slide 11"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- hijabcaro-strt -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/caro1.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Georgette HIjaabs</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2200">
+                                    <img src="./homeimg/caro2.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Dark-Purple Crinkle</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2400">
+                                    <img src="./homeimg/hijabcaro1.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Plain Tassels-Burgendy</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item " >
+                    <div class="row"  data-aos="fade-right" data-aos-duration="2000">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="3000">
+                                    <img src="./homeimg/hijabcaro5.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Chiffon Rose</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="3200">
+                                    <img src="./homeimg/hijabcaro2.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Sheen Crinkle Silk-Plum</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="3400">
+                                    <img src="./homeimg/hijabcaro3.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Women Abaya</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hijabcaro-end -->
+
+                <!-- torcaro-strt -->
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/topcaro1.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">floral top</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2200">
+                                    <img src="./homeimg/topcaro2.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">women's Top</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2400">
+                                    <img src="./homeimg/topcaro3.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Navy-blue Top </h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/topcaro4.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Beautiful Top</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center"  data-aos="fade-up" data-aos-duration="2000" >
+                                <div class="card" style="width: 18rem;">
+                                    <img src="./homeimg/topcaro5.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">women's Blue Top</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/topcaro6.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">black-white Top</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- topcaro-end -->
+
+                <!-- kuticaro-strt -->
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/caro5.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Kurti</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/caro6.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"> Sky-blue Kurti</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/kurticaro1.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">women's Kurti</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/kurticaro2.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Black Kurti</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/kurticaro3.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Green Women Kurti</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/kurticaro4.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">red Kurti</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- kurticaro-end -->
+
+                <!-- bottomcaro-strt -->
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/bottomcaro1.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">wide leg jeans</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/bottomcaro2.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">women's mom's Fit</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/bottomcaro3.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Wide leg navy blue jeans</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/caro7.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Women Bottom</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/caro8.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Wide-Leg Jeans</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/caro9.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Mom Jeans</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottomcaro-end -->
+
+                <!-- luxurycaro-strt -->
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/luxcaro1.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Women Luxury Pret</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/luxcaro2.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Luxury Saari</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/luxcaro3.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Wedding dress</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/luxcaro4.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">White Gown</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/luxcaro5.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Maroon Chiffon Maxi</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="card" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="2000">
+                                    <img src="./homeimg/luxcaro6.jpg" class="card-img-top" alt="..." width="50px"
+                                        height="270px">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Maroon Maxi</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- luxurycaro-end -->
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Topbrand-section -->
+    <section class="Topbrand-section">
+        <div class="container fw-bold text-center common-title mt-5">
+            <h5 class="text-capitalize common-heading" data-aos="zoom-in" data-aos-duration="3000">TOP BRANDS</h5>
+            <hr class="mx-auto w-25">
+        </div>
+
+        <div class="container-fluid">
+            <section class="asimnishat">
+                <div class="container-fluid d-flex justify-content-around ">
+                    <div class="row mb-5">
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <a href="./asimjofa.html">
+                                <div class="pic ">
+                                    <div class="card" style="width: 37rem;" data-aos="fade-right" data-aos-duration="2000">
+                                        <img src="./homeimg/tops2.jpg" class="card-img-top" alt="..." height="620px "
+                                            id="pic1">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <a href="./nishaat.html">
+                                <div class="pic">
+                                    <div class="card" style="width: 39rem;" data-aos="fade-left" data-aos-duration="2000">
+                                        <img src="./homeimg/tops3.jpg" class="card-img-top" alt="..." height="620px "
+                                            id="pic1">
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4" id="brands">
+                    <a href="./sanasafinaz.html">
+                        <div class="d-flex justify-content-around">
+                            <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2500">
+                                <img src="./homeimg/sanas1.jpg" alt="" width="350px" height="450px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <a href="./satrangi.html">
+                        <div class="d-flex justify-content-around" id="brands">
+                            <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="./homeimg/satrs1.jpg" alt="" width="350px" height="450px">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <a href="./alkaram.html">
+                        <div class="d-flex justify-content-around" id="brands">
+                            <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="./homeimg/alkrms1.jpg" alt="" width="350px" height="450px">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+
+        <footer class="bg-color text-center text-lg-start text-white" id="footer">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row my-4">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+                        <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                            style="width: 150px; height: 150px;">
+                            <img src="./homeimg/WhatsApp_Image_2023-10-14_at_15.29.41_cf0b6c9d-removebg-preview.png"
+                                height="80" width="160" loading="lazy" data-aos="zoom-in" data-aos-duration="2000"/>
+                        </div>
+
+                        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+                            nam, similique nesciunt vero in blanditiis?</p>
+
+                        <ul class="list-unstyled d-flex flex-row justify-content-center">
+                            <li>
+                                <a class="text-white px-2" href="#!">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white px-2" href="#!">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-white ps-2" href="#!">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="2000">
+                        <h5 class="text-uppercase mb-4" >Our Brands</h5>
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="./asimjofa.html" class="text-white"><i class="fas fa-shop pe-3"></i>Asim
+                                    jofa</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./nishaat.html" class="text-white"><i class="fas fa-shop pe-3"></i>Nishat
+                                    linen</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./sanasafinaz.html" class="text-white"><i class="fas fa-shop pe-3"></i>sana
+                                    Safinaz</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./satrangi.html" class="text-white"><i class="fas fa-shop pe-3"></i>Bonanza
+                                    Satrangi</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./alkaram.html" class="text-white"><i class="fas fa-shop pe-3"></i>alkaram
+                                    studio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="2000">
+                        <h5 class="text-uppercase mb-4">Our Products</h5>
+
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="./tops .html" class="text-white"><i class="fas fa-shop pe-3"></i>Women's
+                                    Top</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./kurti.html" class="text-white"><i class="fas fa-shop pe-3"></i>Women's
+                                    Kurti</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./bottom.html" class="text-white"><i class="fas fa-shop pe-3"></i>Women's
+                                    Bottoms</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./hijab.html" class="text-white"><i class="fas fa-shop pe-3"></i>Women's
+                                    Hijab</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="./luxury pret.html" class="text-white"><i class="fas fa-shop pe-3"></i>Luxury
+                                    Pret</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="2000">
+                        <h5 class="text-uppercase mb-4">Contact Us</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p><i class="fas fa-map-marker-alt pe-2"></i>fb area ,saddar road</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone pe-2"></i>+111 000 100</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope pe-2 mb-0"></i>madamboutiqu@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+        <!-- End of .container -->
+    </section>
+
+
+    <Script>
+        // Modal Function
+        $('#modalbtn').click(function () {
+            $('#box').show()
+        });
+        $('#clbtn').click(function () {
+            $('#box').hide()
+        });
+        //Navbar Stick to top
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 45) {
+                $('.navbar').addClass('sticky-top shadow-sm');
+            } else {
+                $('.navbar').removeClass('sticky-top shadow-sm');
+            }
+        });
+        // Dropdown on mouse hover
+        const $dropdown = $(".dropdown");
+        const $dropdownToggle = $(".dropdown-toggle");
+        const $dropdownMenu = $(".dropdown-menu");
+        const showClass = "show";
+
+        $(window).on("load resize", function () {
+            if (this.matchMedia("(min-width: 992px)").matches) {
+                $dropdown.hover(
+                    function () {
+                        const $this = $(this);
+                        $this.addClass(showClass);
+                        $this.find($dropdownToggle).attr("aria-expanded", "true");
+                        $this.find($dropdownMenu).addClass(showClass);
+                    },
+                    function () {
+                        const $this = $(this);
+                        $this.removeClass(showClass);
+                        $this.find($dropdownToggle).attr("aria-expanded", "false");
+                        $this.find($dropdownMenu).removeClass(showClass);
+                    }
+                );
+            } else {
+                $dropdown.off("mouseenter mouseleave");
+            }
+        });
+
+
+        AOS.init();
+
+    </Script>
+</body>
+
+</html>

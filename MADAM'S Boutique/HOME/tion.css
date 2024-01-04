@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chilanka&family=Gelasio&family=Lexend&family=Libre+Baskerville&family=Vidaloka&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --bg-dark-color: #1c1c1c;
+    --bg-dark-primary: #1a1d20;
+    --bs-primary-color: #D8776C;
+    --bs-main-color: #E5A4CB;
+    --supporting-color: #c98275;
+    --secondary-color: #f57bb8;
+
+}
+
+
+.navbar {
+    position: relative;
+    transition: .5s;
+}
+
+.ulnav {
+    align-items: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-color {
+    background-color: #f1b9b0;
+}
+
+.nav-link {
+    color: var(--bg-dark-primary) !important;
+    font-family: 'Chilanka', cursive;
+}
+
+.nav-link:hover {
+    color: var(--bs-primary-color) !important;
+}
+
+.dropdown-menu .drop1st {
+    background-color: var(--supporting-color) !important;
+}
+
+.dropdown-menu .drop2nd {
+    background-color: #f1b9b0 !important;
+}
+
+.dropdown-menu {
+    background-color: #e6c1ba;
+}
+
+/* fav-cartbtns */
+.fav {
+    padding: 14px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fav a {
+    float: top;
+    padding: 13px;
+    color: black;
+}
+
+.fav a:hover {
+    color: var(--bs-primary-color);
+}
+
+/* modal-start */
+#box {
+    display: none;
+    background-color: #b6736b91;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: +1;
+}
+
+#modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.719);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 90%;
+    align-items: center;
+ 
+}
+
+#modalbtn {
+    width: 110px;
+    padding: 9px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 2%;
+    font-family: 'Chilanka', cursive;
+}
+
+#modalbtn:hover {
+    width: 115px;
+    height: 52px;
+    align-items: center;
+    transition: .4s;
+    background-color: var(--bs-primary-color);
+    border: none;
+}
+
+#modal-content h1 {
+    font-size: 50px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #D8776C;
+}
+
+#modal-content .modalinp {
+    padding: 12px;
+    width: 390px;
+    border: 2px;
+}
+
+#modal-content .modalinp:hover {
+    width: 400px;
+    height: 50px;
+}
+
+#modal-content #clbtn {
+    padding: 15px;
+    align-items: center;
+    background-color: var(--bs-primary-color);
+    margin: 10px;
+    margin-left: 140px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* modal-end */
+/* Navbar-End */
+
+
+.main-disc {
+    display: flex;
+    flex-direction: row;
+   
+}
+.pimage {
+    height: 60%;
+    width: 50%;
+}
+.pimage img {
+    height: 70%;
+    width: 70%;
+}
+.dischead h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+.dischead p .fa-solid{
+    color: grey;
+}
+.dischead p{
+    font-family: 'Montserrat', sans-serif;
+}
+.stars h5{
+    font-family: 'Montserrat', sans-serif;
+}
+.stars i:hover{
+    color: var(--bs-primary-color);
+}
+#listd li{
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutdress{
+    font-family: 'Montserrat', sans-serif; 
+}
+.butn button{
+    padding: 2%;
+    width: 25%;
+    border-radius:10px ;
+    background-color: var(--bg-dark-color);
+    color: white;
+    font-size: 1.05rem;
+    font-family: 'Montserrat', sans-serif; 
+}
+.butn button:hover{
+    width: 26%;
+    background-color: var(--bs-primary-color);
+    border: none;
+}
+.butn i{
+   position: relative;
+   top: 10px;
+    color: var(--bg-dark-color);
+}
+.butn i:hover{
+    color: var(--bs-primary-color);
+ 
+}
+@media(max-width:768px){
+    .pimage {
+        height: 400px;
+        width: 300px;
+        
+    }
+    .pimage img {
+        height: 350px;
+        width: 250px;
+    }
+    .main-disc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .aboutdress h3{
+        font-size: 15px;
+    }
+    .aboutdress p{
+        font-size: 9px;
+    }
+    #listd li{
+        font-size: 15px;
+    }
+   #modal-content{
+    width: 400px;
+    height: 500px;
+    padding: 5px;
+    transform: translate(-70% ,-60%);
+    align-items: center;
+   }
+   #modal-content .modalinp{
+    width: 200px;
+    height: 25px;
+    padding: 8px;
+   }
+   #modal-content .modalinp:hover {
+    width: 210px;
+    height: 27px;
+}
+#modal-content #clbtn{
+    padding: 15px;
+    margin: 7px;
+}
+.navbar{
+    height: 150px;
+    width: 100%;
+}
+
+}
